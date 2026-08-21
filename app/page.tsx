@@ -8,7 +8,7 @@ const content = {
   en: {
     notice: "Affordable ENT care for every family",
     appointments: "Appointments",
-    nav: ["Services", "Conditions", "About", "Visit us"],
+    nav: ["Services", "Gallery", "Conditions", "About", "Visit us"],
     callClinic: "Call clinic",
     heroEyebrow: "SPECIALIST ENT CARE · DINDIGUL",
     heroTitle: ["Breathe easier.", "Hear better.", "Live fully."],
@@ -24,6 +24,10 @@ const content = {
     servicesEyebrow: "SPECIALIST SERVICES",
     servicesTitle: ["Advanced care,", "close to home."],
     servicesIntro: "From detailed examination to precision surgery, every treatment starts with listening carefully and explaining clearly.",
+    galleryEyebrow: "A CLOSER LOOK",
+    galleryTitle: ["Care with clarity.", "Comfort at every step."],
+    galleryIntro: "Representative imagery of the examinations, conversations and precision-led care that shape a thoughtful ENT visit.",
+    galleryNote: "Representative care imagery · Not photographs of the clinic",
     careEyebrow: "EVERYDAY ENT CARE",
     careTitle: ["The right care for", "the way you feel."],
     careIntro: "Symptoms can be disruptive and worrying. We assess the full picture, explain what we find, and help you understand the next step.",
@@ -55,14 +59,14 @@ const content = {
     phoneNote: "Appointments and today’s clinic hours",
     emailNote: "General enquiries",
     footerLine: "Specialist ENT care for children and adults.",
-    footerNav: ["Services", "Conditions", "About", "Contact"],
+    footerNav: ["Services", "Gallery", "Conditions", "About", "Contact"],
     disclaimer: "Information on this website is general and does not replace medical advice.",
     quickActions: "Quick appointment actions",
   },
   ta: {
     notice: "அனைவரும் அணுகக்கூடிய தரமான ENT சிகிச்சை",
     appointments: "முன்பதிவு",
-    nav: ["சிகிச்சைகள்", "ENT பிரச்சினைகள்", "எங்களைப் பற்றி", "தொடர்புக்கு"],
+    nav: ["சிகிச்சைகள்", "படத் தொகுப்பு", "ENT பிரச்சினைகள்", "எங்களைப் பற்றி", "தொடர்புக்கு"],
     callClinic: "தொடர்புக்கு அழைக்கவும்",
     heroEyebrow: "சிறப்பு காது, மூக்கு, தொண்டை சிகிச்சை · திண்டுக்கல்",
     heroTitle: ["சுலபமாக சுவாசியுங்கள்.", "நன்றாகக் கேளுங்கள்.", "நிறைவாக வாழுங்கள்."],
@@ -78,6 +82,10 @@ const content = {
     servicesEyebrow: "சிறப்பு மருத்துவச் சேவைகள்",
     servicesTitle: ["நவீன ENT சிகிச்சை,", "உங்கள் அருகிலேயே."],
     servicesIntro: "உங்கள் உடல்நிலையை முழுமையாகக் கேட்டறிந்து, பரிசோதனை முடிவுகளைத் தெளிவாக விளக்கிய பிறகே உரிய சிகிச்சையைத் திட்டமிடுகிறோம்.",
+    galleryEyebrow: "சிகிச்சை அணுகுமுறை",
+    galleryTitle: ["தெளிவான பரிசோதனை.", "ஒவ்வொரு கட்டத்திலும் அக்கறை."],
+    galleryIntro: "கவனமான பரிசோதனை, தெளிவான ஆலோசனை மற்றும் துல்லியமான ENT சிகிச்சை அணுகுமுறையை விளக்கும் பிரதிநிதித்துவப் படங்கள்.",
+    galleryNote: "சிகிச்சையை விளக்கும் பிரதிநிதித்துவப் படங்கள் · கிளினிக்கின் நேரடி புகைப்படங்கள் அல்ல",
     careEyebrow: "பொதுவான ENT பிரச்சினைகள்",
     careTitle: ["அறிகுறியை மட்டும் அல்ல,", "காரணத்தையும் கவனிக்கிறோம்."],
     careIntro: "காது, மூக்கு, தொண்டை தொடர்பான பிரச்சினைகள் அன்றாட வாழ்க்கையைப் பாதிக்கலாம். காரணத்தை முறையாகக் கண்டறிந்து, உங்களுக்கு ஏற்ற அடுத்த படியை எளிமையாக விளக்குகிறோம்.",
@@ -109,7 +117,7 @@ const content = {
     phoneNote: "முன்பதிவு மற்றும் கிளினிக் நேர விவரங்களுக்கு",
     emailNote: "பொதுவான தகவல்களுக்கு",
     footerLine: "குழந்தைகள் முதல் பெரியவர்கள் வரை அனைவருக்கும் சிறப்பு ENT மருத்துவச் சேவை.",
-    footerNav: ["சிகிச்சைகள்", "ENT பிரச்சினைகள்", "எங்களைப் பற்றி", "தொடர்பு"],
+    footerNav: ["சிகிச்சைகள்", "படத் தொகுப்பு", "ENT பிரச்சினைகள்", "எங்களைப் பற்றி", "தொடர்பு"],
     disclaimer: "இந்த இணையதளத்தில் உள்ளவை பொதுவான தகவல்கள் மட்டுமே; நேரடி மருத்துவர் ஆலோசனைக்கு மாற்றாகாது.",
     quickActions: "விரைவாகத் தொடர்புகொள்ள",
   },
@@ -139,7 +147,20 @@ const concerns = {
   ta: ["காது வலி & தொற்று", "கேட்கும் திறன் பரிசோதனை", "காது கேட்கும் கருவி (Hearing aid)", "புதிதாகப் பிறந்த குழந்தைகளுக்கான hearing screening", "Vertigo & தலைச்சுற்றல்", "Sinus & மூக்கு ஒவ்வாமை", "மூக்கில் Polyps", "Tonsil பிரச்சினைகள்", "குறட்டை & தூக்கப் பிரச்சினைகள்", "குரல் மாற்றம் & விழுங்குவதில் சிரமம்", "Migraine & தலைவலி", "குழந்தைகளுக்கான ENT மருத்துவம்"],
 } as const;
 
-const navTargets = ["#services", "#care", "#about", "#contact"];
+const galleryImages = {
+  en: [
+    { image: "/gallery/ear-examination.jpg", alt: "Clinician performing a focused ear examination", title: "Focused examination", text: "Clinical assessment with modern diagnostic tools.", credit: "Pexels", source: "https://www.pexels.com/photo/a-doctor-doing-an-ear-examination-5206942/" },
+    { image: "/gallery/otoendoscopy-examination.jpg", alt: "Close view of an ear examination with an otoscope", title: "Precision-led ENT care", text: "Close attention to the details that guide treatment.", credit: "Pexels", source: "https://www.pexels.com/photo/a-patient-having-ear-examination-5206951/" },
+    { image: "/gallery/doctor-consultation.jpg", alt: "Doctor having a clear consultation with a patient", title: "Clear consultation", text: "Time to listen, explain findings and discuss the next step.", credit: "Unsplash", source: "https://unsplash.com/photos/doctor-consults-with-patient-in-modern-office-7-l5EL7YHI4" },
+  ],
+  ta: [
+    { image: "/gallery/ear-examination.jpg", alt: "காதைப் பரிசோதிக்கும் மருத்துவர்", title: "கவனமான பரிசோதனை", text: "நவீன diagnostic கருவிகளுடன் மேற்கொள்ளப்படும் மருத்துவ மதிப்பீடு.", credit: "Pexels", source: "https://www.pexels.com/photo/a-doctor-doing-an-ear-examination-5206942/" },
+    { image: "/gallery/otoendoscopy-examination.jpg", alt: "Otoscope மூலம் செய்யப்படும் காது பரிசோதனை", title: "துல்லியமான ENT கவனம்", text: "சிகிச்சைத் திட்டத்தை வழிநடத்தும் ஒவ்வொரு விவரத்திற்கும் அக்கறை.", credit: "Pexels", source: "https://www.pexels.com/photo/a-patient-having-ear-examination-5206951/" },
+    { image: "/gallery/doctor-consultation.jpg", alt: "நோயாளியுடன் ஆலோசனை மேற்கொள்ளும் மருத்துவர்", title: "தெளிவான ஆலோசனை", text: "அறிகுறிகளைக் கேட்டறிந்து, கண்டறிவுகளை விளக்கி, அடுத்த கட்டத்தைப் பேசுவதற்கான நேரம்.", credit: "Unsplash", source: "https://unsplash.com/photos/doctor-consults-with-patient-in-modern-office-7-l5EL7YHI4" },
+  ],
+} as const;
+
+const navTargets = ["#services", "#gallery", "#care", "#about", "#contact"];
 const whatsappMessages = {
   en: "Hello Subha Health ENT Clinic, I would like to request an appointment.",
   ta: "வணக்கம் Subha Health ENT Clinic, ஆலோசனைக்கு முன்பதிவு செய்ய விரும்புகிறேன்.",
@@ -221,6 +242,22 @@ export default function Home() {
             </article>
           ))}
         </div>
+      </section>
+
+      <section className="gallery" id="gallery">
+        <div className="gallery-heading">
+          <div><p className="eyebrow">{copy.galleryEyebrow}</p><h2>{copy.galleryTitle[0]}<br /><em>{copy.galleryTitle[1]}</em></h2></div>
+          <p>{copy.galleryIntro}</p>
+        </div>
+        <div className="gallery-grid">
+          {galleryImages[language].map((item, index) => (
+            <figure className={`gallery-card gallery-card-${index + 1}`} key={item.image}>
+              <div className="gallery-image"><img src={item.image} alt={item.alt} loading="lazy" /></div>
+              <figcaption><span>0{index + 1}</span><div><h3>{item.title}</h3><p>{item.text}</p></div></figcaption>
+            </figure>
+          ))}
+        </div>
+        <div className="gallery-meta"><p>{copy.galleryNote}</p><p>{language === "ta" ? "படங்கள்:" : "Photography:"} {galleryImages[language].map((item, index) => <span key={item.image}>{index > 0 && " · "}<a href={item.source} target="_blank" rel="noreferrer">{item.credit}</a></span>)}</p></div>
       </section>
 
       <section className="care" id="care">
