@@ -3,7 +3,7 @@ import { headers } from "next/headers";
 import "./globals.css";
 
 const title = "Subha Health ENT Clinic | Dindigul";
-const description = "Specialist ear, nose and throat care for children and adults in Dindigul, with modern diagnostics and minimally invasive treatment.";
+const description = "Specialist ear, nose and throat care for children and adults in Dindigul, with information available in English and Tamil.";
 
 export async function generateMetadata(): Promise<Metadata> {
   const requestHeaders = await headers();
