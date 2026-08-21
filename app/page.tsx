@@ -1,12 +1,10 @@
 const services = [
-  { number: "01", type: "DIAGNOSTICS", image: "/services/diagnostic-endoscopy.jpg", title: "Diagnostic endoscopy", text: "A clear, detailed view of the ear, nose and throat to support accurate diagnosis and treatment planning." },
-  { number: "02", type: "VOICE CARE", image: "/services/video-laryngoscopy.jpg", title: "Video laryngoscopy", text: "Video-assisted examination of the voice box for hoarseness, voice concerns and swallowing symptoms." },
-  { number: "03", type: "ENDOSCOPIC CARE", image: "/services/endoscopic-ent-surgery.jpg", title: "Endoscopic ENT surgery", text: "Minimally invasive endoscopic procedures for conditions affecting the ear, nose, sinuses and throat." },
-  { number: "04", type: "EAR SURGERY", image: "/services/microscopic-ear-surgery.jpg", title: "Microscopic ear surgery", text: "Precision procedures performed under magnification for delicate conditions of the ear." },
-  { number: "05", type: "TEAR DUCT CARE", image: "/services/dacryocystorhinostomy.jpg", title: "Dacryocystorhinostomy", text: "Endoscopic DCR treatment for a blocked tear duct, creating a new drainage pathway through the nose." },
-  { number: "06", type: "MINIMALLY INVASIVE", image: "/services/coblation-surgery.jpg", title: "Coblation surgery", text: "Low-temperature radiofrequency treatment used for selected tonsil, adenoid and soft-tissue procedures." },
-  { number: "07", type: "VOICE SURGERY", image: "/services/microlaryngeal-surgery.jpg", title: "Microlaryngeal surgery", text: "Specialist microsurgery for selected vocal-cord and laryngeal conditions." },
-  { number: "08", type: "MINOR PROCEDURE", image: "/services/ear-lobe-repair.jpg", title: "Ear lobe repair", text: "Careful correction of split, stretched or torn ear lobes with attention to a natural result." },
+  { number: "01", type: "DIAGNOSTICS", image: "/services/diagnostic-endoscopy.jpg", title: "Diagnostic endoscopies", text: "Detailed examinations that help us assess the ear, nose and throat clearly.", items: ["Video laryngoscopy", "Otoendoscopy"] },
+  { number: "02", type: "ENDOSCOPIC CARE", image: "/services/endoscopic-ent-surgery.jpg", title: "Endoscopic surgeries", text: "Modern minimally invasive procedures planned around the condition and the individual.", items: ["FESS", "DCR", "Septoplasty", "Microdebrider turbinectomy", "Polypectomy"] },
+  { number: "03", type: "EAR SURGERY", image: "/services/microscopic-ear-surgery.jpg", title: "Microscopic ear surgeries", text: "Precision procedures performed under magnification for delicate conditions of the ear.", items: ["Cortical mastoidectomy", "Stapes surgery"] },
+  { number: "04", type: "COBLATION", image: "/services/coblation-surgery.jpg", title: "Coblation surgeries", text: "Low-temperature radiofrequency treatment for selected soft-tissue procedures.", items: ["Adenoidectomy", "Tonsillectomy"] },
+  { number: "05", type: "VOICE SURGERY", image: "/services/microlaryngeal-surgery.jpg", title: "Microlaryngeal surgery", text: "Specialist microsurgery for selected vocal-cord and laryngeal conditions.", items: [] },
+  { number: "06", type: "MINOR PROCEDURE", image: "/services/ear-lobe-repair.jpg", title: "Ear lobe repair", text: "Careful correction of split, stretched or torn ear lobes with attention to a natural result.", items: [] },
 ];
 
 const concerns = [
@@ -72,7 +70,11 @@ export default function Home() {
               <div className="service-image" style={{ backgroundImage: `url(${service.image})` }} aria-hidden="true" />
               <div className="service-shade" aria-hidden="true" />
               <div className="service-topline"><span className="service-number">{service.number}</span><span className="service-type">{service.type}</span></div>
-              <div className="service-content"><h3>{service.title}</h3><p>{service.text}</p></div>
+              <div className="service-content">
+                <h3>{service.title}</h3>
+                <p>{service.text}</p>
+                {service.items.length > 0 && <ul>{service.items.map((item) => <li key={item}>{item}</li>)}</ul>}
+              </div>
             </article>
           ))}
         </div>
