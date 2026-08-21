@@ -153,6 +153,8 @@ export default function Home() {
   useEffect(() => {
     const saved = window.localStorage.getItem("subha-language") as Language | null;
     const preferred = saved === "ta" || saved === "en" ? saved : navigator.language.toLowerCase().startsWith("ta") ? "ta" : "en";
+    // The saved language exists only in the browser, after the static page hydrates.
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setLanguage(preferred);
     document.documentElement.lang = preferred;
   }, []);
