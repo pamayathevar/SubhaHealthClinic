@@ -17,7 +17,7 @@ export default function Home() {
   return (
     <main>
       <div className="notice-bar">
-        <p>Consultation fee ₹200</p>
+        <p>Affordable ENT care for every family</p>
         <a href="tel:+918610479562">Appointments: +91 86104 79562</a>
       </div>
 
@@ -45,7 +45,7 @@ export default function Home() {
             <a className="button secondary" href="#services">Explore services</a>
           </div>
           <div className="trust-row" aria-label="Clinic highlights">
-            <span><b>₹200</b> consultation</span>
+            <span><b>Affordable care</b> for every family</span>
             <span><b>All ages</b> children &amp; adults</span>
             <span><b>Advanced</b> endoscopic care</span>
           </div>
@@ -130,7 +130,7 @@ export default function Home() {
             <a className="button primary" href="tel:+918610479562">Call the clinic <span>→</span></a>
             <a className="button secondary" href="https://wa.me/918610479562?text=Hello%20Subha%20Health%20ENT%20Clinic%2C%20I%20would%20like%20to%20request%20an%20appointment." target="_blank" rel="noreferrer">WhatsApp</a>
           </div>
-          <div className="fee-note"><span>CONSULTATION</span><b>₹200</b><small>Please call to confirm availability.</small></div>
+          <div className="fee-note"><span>PATIENT-FIRST CARE</span><b>Affordable</b><small>Thoughtful ENT care for children and adults.</small></div>
         </div>
         <div className="contact-visual">
           <div className="map-frame">
@@ -140,6 +140,7 @@ export default function Home() {
           <div className="visit-details">
             <div><span>ADDRESS</span><p>65, Krishna Rao 3rd Street,<br />Pandian Nagar, Nehruji Nagar,<br />Dindigul, Tamil Nadu 624001</p></div>
             <div><span>PHONE</span><p><a href="tel:+918610479562">+91 86104 79562</a></p><small>Appointments and today&apos;s clinic hours</small></div>
+            <div><span>EMAIL</span><p className="email-address"><a href="mailto:subhahealthentdgl@gmail.com">subhahealthentdgl@gmail.com</a></p><small>General enquiries</small></div>
           </div>
         </div>
       </section>
@@ -149,7 +150,7 @@ export default function Home() {
           <img className="brand-mark" src="/subha-health-logo.png" alt="" aria-hidden="true" />
           <span><strong>SUBHA HEALTH</strong><small>ENT CLINIC · DINDIGUL</small></span>
         </a>
-        <p>Specialist ear, nose and throat care for children and adults.</p>
+        <p className="footer-contact">Specialist ENT care for children and adults.<br /><a href="mailto:subhahealthentdgl@gmail.com">subhahealthentdgl@gmail.com</a></p>
         <div className="footer-links"><a href="#services">Services</a><a href="#care">Conditions</a><a href="#about">About</a><a href="#contact">Contact</a></div>
         <small>© {new Date().getFullYear()} Subha Health ENT Clinic. Information on this website is general and does not replace medical advice.</small>
       </footer>
