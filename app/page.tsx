@@ -24,10 +24,10 @@ const content = {
     servicesEyebrow: "SPECIALIST SERVICES",
     servicesTitle: ["Advanced care,", "close to home."],
     servicesIntro: "From detailed examination to precision surgery, every treatment starts with listening carefully and explaining clearly.",
-    galleryEyebrow: "A CLOSER LOOK",
-    galleryTitle: ["Care with clarity.", "Comfort at every step."],
-    galleryIntro: "Representative imagery of the examinations, conversations and precision-led care that shape a thoughtful ENT visit.",
-    galleryNote: "Representative care imagery · Not photographs of the clinic",
+    galleryEyebrow: "INSIDE THE CLINIC",
+    galleryTitle: ["Experience in action.", "Care you can see."],
+    galleryIntro: "A glimpse of the doctor and clinical team at work, with careful attention throughout ENT procedures.",
+    galleryNote: "Authentic photographs from Subha Health ENT Clinic",
     careEyebrow: "EVERYDAY ENT CARE",
     careTitle: ["The right care for", "the way you feel."],
     careIntro: "Symptoms can be disruptive and worrying. We assess the full picture, explain what we find, and help you understand the next step.",
@@ -82,10 +82,10 @@ const content = {
     servicesEyebrow: "சிறப்பு மருத்துவச் சேவைகள்",
     servicesTitle: ["நவீன ENT சிகிச்சை,", "உங்கள் அருகிலேயே."],
     servicesIntro: "உங்கள் உடல்நிலையை முழுமையாகக் கேட்டறிந்து, பரிசோதனை முடிவுகளைத் தெளிவாக விளக்கிய பிறகே உரிய சிகிச்சையைத் திட்டமிடுகிறோம்.",
-    galleryEyebrow: "சிகிச்சை அணுகுமுறை",
-    galleryTitle: ["தெளிவான பரிசோதனை.", "ஒவ்வொரு கட்டத்திலும் அக்கறை."],
-    galleryIntro: "கவனமான பரிசோதனை, தெளிவான ஆலோசனை மற்றும் துல்லியமான ENT சிகிச்சை அணுகுமுறையை விளக்கும் பிரதிநிதித்துவப் படங்கள்.",
-    galleryNote: "சிகிச்சையை விளக்கும் பிரதிநிதித்துவப் படங்கள் · கிளினிக்கின் நேரடி புகைப்படங்கள் அல்ல",
+    galleryEyebrow: "கிளினிக்கின் மருத்துவப் பணிகள்",
+    galleryTitle: ["அனுபவமும் துல்லியமும்.", "செயலில் அக்கறை."],
+    galleryIntro: "ENT சிகிச்சை நடைமுறைகளில் மருத்துவரும் மருத்துவக் குழுவும் கவனமாகப் பணியாற்றும் தருணங்கள்.",
+    galleryNote: "Subha Health ENT Clinic-ன் நேரடி புகைப்படங்கள்",
     careEyebrow: "பொதுவான ENT பிரச்சினைகள்",
     careTitle: ["அறிகுறியை மட்டும் அல்ல,", "காரணத்தையும் கவனிக்கிறோம்."],
     careIntro: "காது, மூக்கு, தொண்டை தொடர்பான பிரச்சினைகள் அன்றாட வாழ்க்கையைப் பாதிக்கலாம். காரணத்தை முறையாகக் கண்டறிந்து, உங்களுக்கு ஏற்ற அடுத்த படியை எளிமையாக விளக்குகிறோம்.",
@@ -149,14 +149,14 @@ const concerns = {
 
 const galleryImages = {
   en: [
-    { image: "/gallery/ear-examination.jpg", alt: "Clinician performing a focused ear examination", title: "Focused examination", text: "Clinical assessment with modern diagnostic tools.", credit: "Pexels", source: "https://www.pexels.com/photo/a-doctor-doing-an-ear-examination-5206942/" },
-    { image: "/gallery/otoendoscopy-examination.jpg", alt: "Close view of an ear examination with an otoscope", title: "Precision-led ENT care", text: "Close attention to the details that guide treatment.", credit: "Pexels", source: "https://www.pexels.com/photo/a-patient-having-ear-examination-5206951/" },
-    { image: "/gallery/doctor-consultation.jpg", alt: "Doctor having a clear consultation with a patient", title: "Clear consultation", text: "Time to listen, explain findings and discuss the next step.", credit: "Unsplash", source: "https://unsplash.com/photos/doctor-consults-with-patient-in-modern-office-7-l5EL7YHI4" },
+    { image: "/gallery/clinic-procedure-1.png", alt: "Subha Health ENT doctor providing hands-on clinical care", title: "Hands-on ENT care", text: "Careful clinical attention throughout the procedure." },
+    { image: "/gallery/clinic-procedure-2.png", alt: "Subha Health ENT doctor performing a clinical procedure", title: "Focused procedural care", text: "A precise, team-supported approach in the clinical setting." },
+    { image: "/gallery/clinic-procedure-3.png", alt: "Subha Health ENT clinical team caring for a patient", title: "Clinical teamwork", text: "Coordinated care with close attention to comfort and safety." },
   ],
   ta: [
-    { image: "/gallery/ear-examination.jpg", alt: "காதைப் பரிசோதிக்கும் மருத்துவர்", title: "கவனமான பரிசோதனை", text: "நவீன diagnostic கருவிகளுடன் மேற்கொள்ளப்படும் மருத்துவ மதிப்பீடு.", credit: "Pexels", source: "https://www.pexels.com/photo/a-doctor-doing-an-ear-examination-5206942/" },
-    { image: "/gallery/otoendoscopy-examination.jpg", alt: "Otoscope மூலம் செய்யப்படும் காது பரிசோதனை", title: "துல்லியமான ENT கவனம்", text: "சிகிச்சைத் திட்டத்தை வழிநடத்தும் ஒவ்வொரு விவரத்திற்கும் அக்கறை.", credit: "Pexels", source: "https://www.pexels.com/photo/a-patient-having-ear-examination-5206951/" },
-    { image: "/gallery/doctor-consultation.jpg", alt: "நோயாளியுடன் ஆலோசனை மேற்கொள்ளும் மருத்துவர்", title: "தெளிவான ஆலோசனை", text: "அறிகுறிகளைக் கேட்டறிந்து, கண்டறிவுகளை விளக்கி, அடுத்த கட்டத்தைப் பேசுவதற்கான நேரம்.", credit: "Unsplash", source: "https://unsplash.com/photos/doctor-consults-with-patient-in-modern-office-7-l5EL7YHI4" },
+    { image: "/gallery/clinic-procedure-1.png", alt: "நோயாளிக்கு நேரடி ENT சிகிச்சை வழங்கும் Subha Health மருத்துவர்", title: "நேரடி ENT சிகிச்சை", text: "சிகிச்சையின் ஒவ்வொரு கட்டத்திலும் நுணுக்கமான மருத்துவக் கவனம்." },
+    { image: "/gallery/clinic-procedure-2.png", alt: "சிகிச்சை நடைமுறையை மேற்கொள்ளும் Subha Health ENT மருத்துவர்", title: "துல்லியமான சிகிச்சை நடைமுறை", text: "மருத்துவக் குழுவின் ஒத்துழைப்புடன் கவனமாக மேற்கொள்ளப்படும் சிகிச்சை." },
+    { image: "/gallery/clinic-procedure-3.png", alt: "நோயாளியை கவனிக்கும் Subha Health ENT மருத்துவக் குழு", title: "ஒருங்கிணைந்த மருத்துவக் குழு", text: "நோயாளியின் வசதிக்கும் பாதுகாப்பிற்கும் முன்னுரிமை அளிக்கும் கவனிப்பு." },
   ],
 } as const;
 
@@ -257,7 +257,7 @@ export default function Home() {
             </figure>
           ))}
         </div>
-        <div className="gallery-meta"><p>{copy.galleryNote}</p><p>{language === "ta" ? "படங்கள்:" : "Photography:"} {galleryImages[language].map((item, index) => <span key={item.image}>{index > 0 && " · "}<a href={item.source} target="_blank" rel="noreferrer">{item.credit}</a></span>)}</p></div>
+        <div className="gallery-meta"><p>{copy.galleryNote}</p><span aria-hidden="true">SUBHA HEALTH · ENT CLINIC · DINDIGUL</span></div>
       </section>
 
       <section className="care" id="care">
