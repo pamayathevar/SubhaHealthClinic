@@ -8,6 +8,9 @@ html:lang(ta) body { font-family:"Noto Sans Tamil","Tamil Sangam MN",Latha,Arial
 html:lang(ta) h1,html:lang(ta) h2,html:lang(ta) .about-copy .large-copy,html:lang(ta) .appointment-band h2,html:lang(ta) .hero-art>p,html:lang(ta) .about-visual>p,html:lang(ta) .principles h3,html:lang(ta) .concern p,html:lang(ta) .map-cta b,html:lang(ta) .visit-details p,html:lang(ta) .care-promise b { font-family:"Noto Serif Tamil","Tamil MN","Noto Sans Tamil",serif; letter-spacing:0; }
 html:lang(ta) h1 { font-size:clamp(42px,5.2vw,72px); line-height:1.14; }
 html:lang(ta) .section-heading h2,html:lang(ta) .care h2,html:lang(ta) .about h2,html:lang(ta) .contact h2 { font-size:clamp(38px,4.5vw,61px); line-height:1.18; }
+html:lang(ta) .eyebrow,html:lang(ta) .service-type,html:lang(ta) .care-promise span,html:lang(ta) .visit-details span,html:lang(ta) .map-cta span { letter-spacing:.04em; line-height:1.55; }
+html:lang(ta) .notice-bar { letter-spacing:0; }
+html:lang(ta) .service-card p,html:lang(ta) .care-intro>p:not(.eyebrow),html:lang(ta) .about-copy>p,html:lang(ta) .contact-copy { line-height:1.8; }
 a { color:inherit; text-decoration:none; }
 p { line-height:1.65; }
 em { color:var(--green); font-weight:400; }
