@@ -44,9 +44,9 @@ const content = {
     visitEyebrow: "VISIT THE CLINIC",
     contactTitle: ["Easy to find.", "Here to help."],
     contactCopy: "Call before you visit and we’ll help you choose a convenient consultation time.",
-    patientFirst: "PATIENT-FIRST CARE",
-    affordable: "Affordable",
-    affordableNote: "Thoughtful ENT care for children and adults.",
+    patientFirst: "CARE FOR EVERY FAMILY",
+    affordable: "Specialist care, within reach.",
+    affordableNote: "Clear advice, thoughtful treatment and accessible ENT care for children and adults.",
     directions: "GET DIRECTIONS",
     openMaps: "Open in Google Maps",
     address: "ADDRESS",
@@ -98,9 +98,9 @@ const content = {
     visitEyebrow: "கிளினிக்கிற்கு வருகை தரவும்",
     contactTitle: ["எளிதாகக் கண்டுபிடிக்கலாம்.", "உதவ நாங்கள் இருக்கிறோம்."],
     contactCopy: "வருவதற்கு முன் அழைக்கவும். உங்களுக்கு வசதியான consultation நேரத்தைத் தேர்ந்தெடுக்க உதவுகிறோம்.",
-    patientFirst: "நோயாளிக்கு முதலிடம்",
-    affordable: "அனைவருக்கும் ஏற்ற கட்டணம்",
-    affordableNote: "குழந்தைகள் மற்றும் பெரியவர்களுக்கான அக்கறையான ENT சிகிச்சை.",
+    patientFirst: "ஒவ்வொரு குடும்பத்திற்கும் அக்கறை",
+    affordable: "அனைவருக்கும் ஏற்ற சிறப்பு சிகிச்சை.",
+    affordableNote: "தெளிவான ஆலோசனை, அக்கறையான அணுகுமுறை மற்றும் குழந்தைகள் முதல் பெரியவர்கள் வரை அனைவருக்கும் ENT சிகிச்சை.",
     directions: "வழித்தடம் பெறுங்கள்",
     openMaps: "Google Maps-ல் திறக்கவும்",
     address: "முகவரி",
@@ -243,7 +243,10 @@ export default function Home() {
         <div className="contact-heading">
           <p className="eyebrow">{copy.visitEyebrow}</p><h2>{copy.contactTitle[0]}<br /><em>{copy.contactTitle[1]}</em></h2><p className="contact-copy">{copy.contactCopy}</p>
           <div className="contact-actions"><a className="button primary" href="tel:+918610479562">{copy.callClinic} <span>→</span></a><a className="button secondary" href={whatsappUrl} target="_blank" rel="noreferrer">WhatsApp</a></div>
-          <div className="fee-note"><span>{copy.patientFirst}</span><b>{copy.affordable}</b><small>{copy.affordableNote}</small></div>
+          <div className="care-promise">
+            <div className="care-promise-mark"><img src="/subha-health-logo.png" alt="" aria-hidden="true" /></div>
+            <div className="care-promise-copy"><span>{copy.patientFirst}</span><b>{copy.affordable}</b><small>{copy.affordableNote}</small></div>
+          </div>
         </div>
         <div className="contact-visual">
           <div className="map-frame"><iframe title={language === "ta" ? "திண்டுக்கல்லில் Subha Health ENT Clinic அமைந்துள்ள வரைபடம்" : "Map showing Subha Health ENT Clinic in Dindigul"} src="https://www.google.com/maps?q=Subha+Health+ENT+Clinic+Dindigul&output=embed" loading="lazy" referrerPolicy="no-referrer-when-downgrade" /><a className="map-cta" href="https://www.google.com/maps/search/?api=1&query=Subha+Health+ENT+Clinic+Dindigul" target="_blank" rel="noreferrer"><span>{copy.directions}</span><b>{copy.openMaps}</b><i>↗</i></a></div>
