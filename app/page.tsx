@@ -125,14 +125,22 @@ export default function Home() {
         <div className="contact-heading">
           <p className="eyebrow">VISIT THE CLINIC</p>
           <h2>Easy to find.<br /><em>Here to help.</em></h2>
+          <p className="contact-copy">Call before you visit and we&apos;ll help you choose a convenient consultation time.</p>
+          <div className="contact-actions">
+            <a className="button primary" href="tel:+918610479562">Call the clinic <span>→</span></a>
+            <a className="button secondary" href="https://wa.me/918610479562?text=Hello%20Subha%20Health%20ENT%20Clinic%2C%20I%20would%20like%20to%20request%20an%20appointment." target="_blank" rel="noreferrer">WhatsApp</a>
+          </div>
+          <div className="fee-note"><span>CONSULTATION</span><b>₹200</b><small>Please call to confirm availability.</small></div>
         </div>
-        <div className="contact-details">
-          <div className="detail"><span>ADDRESS</span><p>65, Krishna Rao 3rd Street,<br />Pandian Nagar, Nehruji Nagar,<br />Dindigul, Tamil Nadu 624001</p></div>
-          <div className="detail"><span>PHONE</span><p><a href="tel:+918610479562">+91 86104 79562</a></p><small>Tap to call for appointments and today&apos;s clinic hours.</small></div>
-          <div className="detail"><span>CONSULTATION</span><p>₹200</p><small>Call the clinic to confirm availability before visiting.</small></div>
-          <a className="direction-card" href="https://www.google.com/maps/search/?api=1&query=Subha+Health+ENT+Clinic+Dindigul" target="_blank" rel="noreferrer">
-            <span>GET DIRECTIONS</span><b>Open in Google Maps</b><i>↗</i>
-          </a>
+        <div className="contact-visual">
+          <div className="map-frame">
+            <iframe title="Map showing Subha Health ENT Clinic in Dindigul" src="https://www.google.com/maps?q=Subha+Health+ENT+Clinic+Dindigul&output=embed" loading="lazy" referrerPolicy="no-referrer-when-downgrade" />
+            <a className="map-cta" href="https://www.google.com/maps/search/?api=1&query=Subha+Health+ENT+Clinic+Dindigul" target="_blank" rel="noreferrer"><span>GET DIRECTIONS</span><b>Open in Google Maps</b><i>↗</i></a>
+          </div>
+          <div className="visit-details">
+            <div><span>ADDRESS</span><p>65, Krishna Rao 3rd Street,<br />Pandian Nagar, Nehruji Nagar,<br />Dindigul, Tamil Nadu 624001</p></div>
+            <div><span>PHONE</span><p><a href="tel:+918610479562">+91 86104 79562</a></p><small>Appointments and today&apos;s clinic hours</small></div>
+          </div>
         </div>
       </section>
 
