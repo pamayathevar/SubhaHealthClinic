@@ -1,12 +1,12 @@
 const services = [
-  { number: "01", title: "Diagnostic endoscopy", text: "A clear, detailed view of the ear, nose and throat to support accurate diagnosis and treatment planning." },
-  { number: "02", title: "Video laryngoscopy", text: "Video-assisted examination of the voice box for hoarseness, voice concerns and swallowing symptoms." },
-  { number: "03", title: "Endoscopic ENT surgery", text: "Minimally invasive endoscopic procedures for conditions affecting the ear, nose, sinuses and throat." },
-  { number: "04", title: "Microscopic ear surgery", text: "Precision procedures performed under magnification for delicate conditions of the ear." },
-  { number: "05", title: "Dacryocystorhinostomy", text: "Endoscopic DCR treatment for a blocked tear duct, creating a new drainage pathway through the nose." },
-  { number: "06", title: "Coblation surgery", text: "Low-temperature radiofrequency treatment used for selected tonsil, adenoid and soft-tissue procedures." },
-  { number: "07", title: "Microlaryngeal surgery", text: "Specialist microsurgery for selected vocal-cord and laryngeal conditions." },
-  { number: "08", title: "Ear lobe repair", text: "Careful correction of split, stretched or torn ear lobes with attention to a natural result." },
+  { number: "01", type: "DIAGNOSTICS", image: "/services/diagnostic-endoscopy.jpg", title: "Diagnostic endoscopy", text: "A clear, detailed view of the ear, nose and throat to support accurate diagnosis and treatment planning." },
+  { number: "02", type: "VOICE CARE", image: "/services/video-laryngoscopy.jpg", title: "Video laryngoscopy", text: "Video-assisted examination of the voice box for hoarseness, voice concerns and swallowing symptoms." },
+  { number: "03", type: "ENDOSCOPIC CARE", image: "/services/endoscopic-ent-surgery.jpg", title: "Endoscopic ENT surgery", text: "Minimally invasive endoscopic procedures for conditions affecting the ear, nose, sinuses and throat." },
+  { number: "04", type: "EAR SURGERY", image: "/services/microscopic-ear-surgery.jpg", title: "Microscopic ear surgery", text: "Precision procedures performed under magnification for delicate conditions of the ear." },
+  { number: "05", type: "TEAR DUCT CARE", image: "/services/dacryocystorhinostomy.jpg", title: "Dacryocystorhinostomy", text: "Endoscopic DCR treatment for a blocked tear duct, creating a new drainage pathway through the nose." },
+  { number: "06", type: "MINIMALLY INVASIVE", image: "/services/coblation-surgery.jpg", title: "Coblation surgery", text: "Low-temperature radiofrequency treatment used for selected tonsil, adenoid and soft-tissue procedures." },
+  { number: "07", type: "VOICE SURGERY", image: "/services/microlaryngeal-surgery.jpg", title: "Microlaryngeal surgery", text: "Specialist microsurgery for selected vocal-cord and laryngeal conditions." },
+  { number: "08", type: "MINOR PROCEDURE", image: "/services/ear-lobe-repair.jpg", title: "Ear lobe repair", text: "Careful correction of split, stretched or torn ear lobes with attention to a natural result." },
 ];
 
 const concerns = [
@@ -66,12 +66,13 @@ export default function Home() {
           <div><p className="eyebrow">SPECIALIST SERVICES</p><h2>Advanced care,<br /><em>close to home.</em></h2></div>
           <p>From detailed examination to precision surgery, every treatment starts with listening carefully and explaining clearly.</p>
         </div>
-        <div className="service-grid">
+        <div className="service-grid" aria-label="Specialist ENT services">
           {services.map((service) => (
             <article className="service-card" key={service.number}>
-              <span className="service-number">{service.number}</span>
-              <h3>{service.title}</h3>
-              <p>{service.text}</p>
+              <div className="service-image" style={{ backgroundImage: `url(${service.image})` }} aria-hidden="true" />
+              <div className="service-shade" aria-hidden="true" />
+              <div className="service-topline"><span className="service-number">{service.number}</span><span className="service-type">{service.type}</span></div>
+              <div className="service-content"><h3>{service.title}</h3><p>{service.text}</p></div>
             </article>
           ))}
         </div>
