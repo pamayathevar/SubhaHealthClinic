@@ -25,7 +25,7 @@ export default function Home() {
 
       <header className="site-header">
         <a className="brand" href="#top" aria-label="Subha Health ENT Clinic home">
-          <span className="brand-mark" aria-hidden="true">S</span>
+          <img className="brand-mark" src="/subha-health-logo.png" alt="" aria-hidden="true" />
           <span><strong>SUBHA HEALTH</strong><small>ENT CLINIC · DINDIGUL</small></span>
         </a>
         <nav aria-label="Primary navigation">
@@ -56,7 +56,7 @@ export default function Home() {
           <div className="art-orbit orbit-one" />
           <div className="art-orbit orbit-two" />
           <div className="profile-line" aria-hidden="true"><span>◯</span><i>∿</i></div>
-          <div className="art-core">ENT</div>
+          <div className="art-core"><img src="/subha-health-logo.png" alt="Subha Health ENT Clinic logo" /></div>
           <p>Precision care<br />with a human touch</p>
         </div>
       </section>
@@ -93,7 +93,7 @@ export default function Home() {
 
       <section className="about" id="about">
         <div className="about-visual" aria-hidden="true">
-          <div className="about-circle"><b>EAR</b><span>NOSE</span><em>THROAT</em></div>
+          <div className="about-circle"><img src="/subha-health-logo.png" alt="" /><b>EAR</b><span>NOSE</span><em>THROAT</em></div>
           <p>Care that sees<br />the whole person.</p>
         </div>
         <div className="about-copy">
@@ -135,7 +135,7 @@ export default function Home() {
 
       <footer>
         <a className="brand footer-brand" href="#top">
-          <span className="brand-mark" aria-hidden="true">S</span>
+          <img className="brand-mark" src="/subha-health-logo.png" alt="" aria-hidden="true" />
           <span><strong>SUBHA HEALTH</strong><small>ENT CLINIC · DINDIGUL</small></span>
         </a>
         <p>Specialist ear, nose and throat care for children and adults.</p>

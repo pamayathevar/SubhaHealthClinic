@@ -15,6 +15,11 @@ export async function generateMetadata(): Promise<Metadata> {
     metadataBase: new URL(baseUrl),
     title,
     description,
+    icons: {
+      icon: "/subha-health-logo.png",
+      shortcut: "/subha-health-logo.png",
+      apple: "/subha-health-logo.png",
+    },
     alternates: { canonical: "/" },
     openGraph: {
       title,
